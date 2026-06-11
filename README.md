@@ -1,8 +1,10 @@
-# S1L1E01 MUSICAL INSTRUMENTS
+# SPRINT 1
+
+## LEVEL1 MUSICAL INSTRUMENTS
 This goal of this exercise is to practice POO concepts in Java, like, inheritance,
 polymorphism, abstract classes and methods, class loading and static initializacion blocks.
 
-## CLASS STRUCTURE
+### CLASS STRUCTURE
 **Astract class** 
 `Instrument`
 
@@ -20,3 +22,9 @@ Abstract method:
 * PercussionInstrument
 
 Overrides `play()` method in each subclasses.
+
+## LEVEL1 CARS
+The goal of this exercise is understand the difference between `static` and `final`, 
+how do they work, and when they get initialized.
+
+
