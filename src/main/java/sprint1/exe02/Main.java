@@ -33,8 +33,8 @@ public class Main {
         System.out.println("Car2 model: " + car2.model);
 
 //      After initializate the objects the non static method can be used:
-        System.out.println("Car1: "+ car1.accelerate());
-        System.out.println("Car2: "+ car2.accelerate());
+        car1.accelerate();
+        car2.accelerate();
 
     }
 }
