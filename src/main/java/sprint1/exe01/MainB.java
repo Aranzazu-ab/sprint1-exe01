@@ -1,4 +1,4 @@
-package sprint01.exe01;
+package sprint1.exe01;
 
 //Main that demostrates that the class is loaded when a static member is accessed.
 

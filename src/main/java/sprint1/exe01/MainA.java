@@ -1,4 +1,4 @@
-package sprint01.exe01;
+package sprint1.exe01;
 
 //Main that demostrates the inheritance and polimorphism between the superclass Instrument and its subclasses.
 //Also, this illustrates how using a static initialization block in the Instrument superclass and creating the first

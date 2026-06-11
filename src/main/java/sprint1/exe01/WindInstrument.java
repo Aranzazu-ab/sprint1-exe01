@@ -1,4 +1,4 @@
-package sprint01.exe01;
+package sprint1.exe01;
 
 public class WindInstrument extends Instrument {
 
