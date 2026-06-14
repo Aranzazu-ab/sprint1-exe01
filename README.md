@@ -50,3 +50,40 @@ Also, the brand and model attributes affect all the instances of class because t
 
 The static instance in methods applies the same, that is why the static `brake()` method that belongs to the Car class can be used-called without creating an object.
 While, the `accelerate()` methods isn't static and belongs to each object, so they can be used only after the object car was created.
+
+## LEVEL 2 SMARTPHONE
+The goal of this exercise is to practice and understand the inheritance and interfaces, as well as the similarities and differences between an abstract class and an interface.
+
+### STRUCTURE
+Class phone.
+Atributes:
+* `brand`
+* `model`
+
+Method:
+* `call()`
+
+Interface Camera
+* `takePhoto()` 
+
+Interface Clock
+* `alarm()`
+
+Class Smartphone:
+Extends: 
+* Phone
+
+Implements:
+* Camera
+* Clock
+
+Overrides methods:
+* ` takePhoto()`
+* `alarm()`
+
+### TESTING
+In MainSmartphone a smartphone is created and the call(), takePhoto() and alarm() methods are created.
+
+### RESULTS
+The output of the three methods mentioned is shown, because the Smartphone object inherits the call() method from Phone and also implements the methods required by Camera and Clock.
+This exercise demonstrates how a class can inherit from another class while implementing multiple interfaces and add different functionalities.
