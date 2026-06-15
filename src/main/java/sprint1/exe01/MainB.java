@@ -5,6 +5,6 @@ package sprint1.exe01;
 public class MainB {
     static void main() {
         System.out.println("Getting access to a static attribute: ");
-        System.out.println(Instrument.total);
+        System.out.println(Instrument.totalInstrument);
     }
 }

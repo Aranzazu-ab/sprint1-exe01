@@ -4,7 +4,7 @@ public abstract class Instrument {
     private String name;
     private double price;
 
-    public static int total = 0;
+    public static int totalInstrument = 0;
 
     static{
         System.out.println("Class Instrument is loaded.");
@@ -13,7 +13,7 @@ public abstract class Instrument {
     public Instrument(String name, double price){
         this.name = name;
         this.price=price;
-        total++;
+        totalInstrument++;
     }
 
     public String getName() {

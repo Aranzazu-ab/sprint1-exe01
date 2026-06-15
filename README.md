@@ -29,7 +29,7 @@ how do they work, if they can be changed and when they get initialized.
 
 ### CLASS STRUCTURE
 Attributtes:
-* `brand` (static final)
+* `BRAND` (static final)
 * `model` (static)
 * `power` (final)
 
@@ -38,10 +38,25 @@ Methods:
 * `accelerate()` (non static)
 
 ### TESTING AND OBSERVATION
-In the main file I try to call the `accelerate()` method without create any object, but it get and error; while it works for `brake(`) method.
-A `car1` object was created but when I try to change the power it gives me an error.
-Also create another object and call for their brand and models, and it was the same for both.
-When change the  model, the model change in both objects. And finally I try again call the `accelerate()` method and now it works.
+In the Car class, attributes are set to test whether they can be accessed and modified from outside the class.
+A setter for `power` was considered but could not be implemented because power is a final attribute, once assigned, it's value can't be change:
+`public void setPower(int power){this.power=power; }`
+
+Calling `accelerate()` method without create any object, throws an error: 
+`java: non-static method accelerate() cannot be referenced from a static context`.
+This happens because `accelerate()` belongs to an instance, so an object must exist first.
+And in contrast, `brake()` works without an object since it is static and belongs to the class itself.
+
+Trying to modify power on car1 object throws an error:
+`java: cannot assign a value to final variable power`
+That confirms that final variables cannot be reassigned after initialization.
+
+When a second object is created `car2` both objects share the same `BRAND` and `model` values, since those are static and belong to the class.
+Changing `model` throug one object updates it for all instances.
+
+While try to change `BRAND`, isn't possible because it's a final attribute. 
+Finally, calling `accelerate()` after creating an object works correctly.
+
 
 ### RESULTS
 The power attribute can be initialized in the constructor because it's a final instance attribute, each car can have different values.
@@ -82,8 +97,8 @@ Overrides methods:
 * `alarm()`
 
 ### TESTING
-In MainSmartphone a smartphone is created and the call(), takePhoto() and alarm() methods are created.
+In MainSmartphone a smartphone is created and the `call()`, `takePhoto()` and `alarm()` methods are created.
 
 ### RESULTS
-The output of the three methods mentioned is shown, because the Smartphone object inherits the call() method from Phone and also implements the methods required by Camera and Clock.
+The output of the three methods mentioned is shown, because the Smartphone object inherits the `call()` method from Phone and also implements the methods required by Camera and Clock.
 This exercise demonstrates how a class can inherit from another class while implementing multiple interfaces and add different functionalities.
